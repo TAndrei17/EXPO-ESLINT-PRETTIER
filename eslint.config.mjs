@@ -1,8 +1,10 @@
-import globals from 'globals';
 import pluginJs from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import pluginReact from 'eslint-plugin-react';
+import importPlugin from 'eslint-plugin-import';
 import prettierPlugin from 'eslint-plugin-prettier';
+import pluginReact from 'eslint-plugin-react';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
 import config from './prettier.config.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -15,11 +17,22 @@ export default [
 	{
 		plugins: {
 			prettier: prettierPlugin,
+			import: importPlugin,
 		},
 		rules: {
 			'@typescript-eslint/no-require-imports': 'off',
 			'react/react-in-jsx-scope': 0,
 			'react/jsx-uses-react': 0,
+			'import/order': [
+				'error',
+				{
+					'newlines-between': 'always',
+					alphabetize: {
+						order: 'asc',
+						caseInsensitive: true,
+					},
+				},
+			],
 			'prettier/prettier': ['error', config],
 		},
 		ignores: ['/.expo', 'node_modules/', 'assets/'],
