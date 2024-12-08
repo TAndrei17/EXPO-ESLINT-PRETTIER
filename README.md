@@ -15,4 +15,4 @@ yarn install
 To learn more about developing a project with Expo, look at the following resources:
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/guides/using-eslint/): Expo ESLint configuration setup for the project.
+- [Use ESLint and Prettier](https://docs.expo.dev/guides/using-eslint/): Expo ESLint configuration setup for the project.
