@@ -3,6 +3,7 @@ import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import prettierPlugin from 'eslint-plugin-prettier';
+import config from './prettier.config.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -19,7 +20,7 @@ export default [
 			'@typescript-eslint/no-require-imports': 'off',
 			'react/react-in-jsx-scope': 0,
 			'react/jsx-uses-react': 0,
-			'prettier/prettier': 'error',
+			'prettier/prettier': ['error', config],
 		},
 		ignores: ['/.expo', 'node_modules/', 'assets/', 'config/*'],
 		settings: {
