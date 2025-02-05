@@ -20,13 +20,13 @@ git clone git@github.com:TAndrei17/EXPO-ESLINT-PRETTIER.git
 If you're using the Yarn package manager, simply run the following command:
 
 ```bash
-make setup.
+make setup
 ```
 
 If you're using a different package manager, change the PACKAGE_MANAGER variable in the Makefile and run the command:
 
 ```bash
-make setup.
+make setup
 ```
 
 This command will:
@@ -35,8 +35,6 @@ This command will:
 - Install dependencies: Installs all required dependencies.
 - Check for outdated packages: Verifies if any installed dependencies are outdated.
 - Update dependencies: Updates installed dependencies to the latest compatible versions.
-
-Once the setup is complete, your project is ready to use!
 
 ## Learn more
 
