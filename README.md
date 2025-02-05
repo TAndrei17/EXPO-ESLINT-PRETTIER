@@ -7,7 +7,12 @@ This repository provides a quick start for a React Native project using Expo 52,
 - The i18next library for internationalization is installed and configured.
 - Redux Toolkit is integrated.
 
-Pull requests are welcome.
+Pull requests are welcome. To contribute, please follow these steps:
+
+- Create a new branch based on the dev branch.
+- Make your changes in your new branch.
+- Make sure your code passes the linter check (`bash yarn lint`or `bash npx eslint .`).
+- Once you're done, submit a pull request to merge your changes into the dev branch.
 
 ## Getting Started
 
@@ -23,15 +28,12 @@ If you're using the Yarn package manager, simply run the following command:
 make setup
 ```
 
-If you're using a different package manager, change the PACKAGE_MANAGER variable in the Makefile and run the command:
+If you're using a different package manager, change the PACKAGE_MANAGER variable in the Makefile and run the command above.
 
-```bash
-make setup
-```
-
-This command will:
+Command `bash make setup` will:
 
 - Clean up old data: Removes the .git directory, node_modules, and lock files (package-lock.json, yarn.lock, pnpm-lock.yaml).
+  - **Note**: If the .git directory is removed, you will need to manually reinitialize Git by running `bash git init` and setting up your remote repository again.
 - Install dependencies: Installs all required dependencies.
 - Check for outdated packages: Verifies if any installed dependencies are outdated.
 - Update dependencies: Updates installed dependencies to the latest compatible versions.
