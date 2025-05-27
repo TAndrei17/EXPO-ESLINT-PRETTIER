@@ -1,6 +1,6 @@
 # EXPO-ESLINT-PRETTIER
 
-This repository provides a quick start for a React Native project using Expo 52, created with
+This repository provides a quick start for a React Native project using Expo 53, created with
 [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 - The project is configured with the standard Expo setup for ESLint and Prettier, along with some custom modifications.
